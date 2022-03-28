@@ -12,8 +12,8 @@
     $username = $update["message"]["from"]["username"];
     $firstname = $update["message"]["from"]["first_name"];
     $chatname = $_ENV['CHAT'];
-    $i = "@DanGel_Glr";
-    $my = "⫷ ɴͥɪͣᴄͫᴀ͜͠☆ ₫₳Ϟ₲϶Γ™⫸"
+    $i = ("@DanGel_Glr";)
+    $my = ("ɴͥɪͣᴄͫᴀ͜͠☆")
  /// for broadcasting in Channel
 $channel_id = "-100xxxxxxxxxx";
 
