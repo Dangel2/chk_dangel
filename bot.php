@@ -148,7 +148,7 @@ if(strpos($message, "/bin") === 0){
     $bin = substr($message, 5);
     $curl = curl_init();
     curl_setopt_array($curl, [
-    CURLOPT_URL => "http://bins.su/".$bin,
+    CURLOPT_URL => "https://vercel-two-flax.vercel.app/api/".$bin,
     CURLOPT_RETURNTRANSFER => true,
     CURLOPT_FOLLOWLOCATION => true,
     CURLOPT_ENCODING => "",
@@ -190,7 +190,7 @@ $flag = $data['data']['countryInfo']['emoji'];
 🌐𝗖𝗼𝘂𝗻𝘁𝗿𝘆: $country $flag
 📊𝗧𝘆𝗽𝗲: $type
 👤𝗖𝗵𝗲𝗰𝗸𝗲𝗱 𝗕𝘆: @$username
-👑𝗢𝘄𝗻𝗲𝗿 [$my]($i)");
+👑𝗢𝘄𝗻𝗲𝗿 : [$my]($i)");
     }
 else {
     send_MDmessage($chat_id,$message_id, "***𝗜𝗻𝘀𝗲𝗿𝘁𝗮 𝘂𝗻 𝗕𝗜𝗡 𝘃𝗮𝗹𝗶𝗱𝗼***");
