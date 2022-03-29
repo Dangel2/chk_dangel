@@ -84,7 +84,7 @@ if($message == "/random"){
     }
 
      if($message == "/info"){
-        send_message($chat_id,$message_id, "𝙄𝙉𝙁𝙊𝙍𝙈𝘼𝘾𝙄𝙊𝙉 𝘿𝙀𝙇 𝙐𝙎𝙐𝘼𝙍𝙄𝙊 \n\nName: $firstname\nID:$id \nUsername: @$username\n\nOwner: [$my]($i)");
+        send_message($chat_id,$message_id, "𝙄𝙉𝙁𝙊𝙍𝙈𝘼𝘾𝙄𝙊𝙉 𝘿𝙀𝙇 𝙐𝙎𝙐𝘼𝙍𝙄𝙊 \n\nName: $firstname\nID: ```$id``` \nUsername: @$username\n\nOwner: [$my]($i)");
     }
 
 
