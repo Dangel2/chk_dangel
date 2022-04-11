@@ -13,7 +13,7 @@
     $firstname = $update["message"]["from"]["first_name"];
     $chatname = $_ENV['CHAT'];
     $i = ("@DanGel_Glr");
-    $my = "[⫷ ɴͥɪͣᴄͫᴀ͜͠☆ ₫₳Ϟ₲϶Γ™⫸](https://t.me/DanGel_Glr)"
+    $my = "[⫷ ɴͥɪͣᴄͫᴀ͜͠☆ ₫₳Ϟ₲϶Γ™⫸](https://t.me/DanGel_Glr)";
  /// for broadcasting in Channel
 $channel_id = "-100xxxxxxxxxx";
 
