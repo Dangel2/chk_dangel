@@ -13,7 +13,7 @@
     $firstname = $update["message"]["from"]["first_name"];
     $chatname = $_ENV['CHAT'];
     $i = ("@DanGel_Glr");
-    $my = ("ɴͥɪͣᴄͫᴀ͜͠☆");
+    $my = "[⫷ ɴͥɪͣᴄͫᴀ͜͠☆ ₫₳Ϟ₲϶Γ™⫸](https://t.me/DanGel_Glr)"
  /// for broadcasting in Channel
 $channel_id = "-100xxxxxxxxxx";
 
@@ -80,11 +80,11 @@ if($message == "/random"){
       $toss =array("1","2","3","4","5","6","7","8","9","10");
     $random_toss=array_rand($toss,4);
     $tossed = $toss[$random_toss[0]];
-        send_message($chat_id,$message_id, "$tossed \nTossed By: @$username\n\nOwner: [$my]($i)");
+        send_message($chat_id,$message_id, "$tossed \nTossed By: @$username\n\nOwner: $i\n Prueba: $my");
     }
 
      if($message == "/info"){
-        send_message($chat_id,$message_id, "𝙄𝙉𝙁𝙊𝙍𝙈𝘼𝘾𝙄𝙊𝙉 𝘿𝙀𝙇 𝙐𝙎𝙐𝘼𝙍𝙄𝙊 \n\nName: $firstname\nID: ```$id``` \nUsername: @$username\n\nOwner: [$my]($i)");
+        send_message($chat_id,$message_id, "𝙄𝙉𝙁𝙊𝙍𝙈𝘼𝘾𝙄𝙊𝙉 𝘿𝙀𝙇 𝙐𝙎𝙐𝘼𝙍𝙄𝙊 \n\nName: $firstname\nID: ```$id``` \nUsername: @$username\n\nOwner: $i");
     }
 
 
@@ -114,7 +114,7 @@ if ($gitdlurl != null) {
 
 //Youtube Search
 if (strpos($message, "/yt") === 0) {
-$syt = substr($message, 6);
+$syt = substr($message, 4);
 $syt = preg_replace('/\s+/', '+', $syt);
 $yurl = "[Abrir enlace de Youtube](https://www.youtube.com/results?search_query=$syt)";
 if ($syt != null) {
@@ -127,7 +127,7 @@ if ($syt != null) {
 if (strpos($message, "/king") === 0) {
 $broadcast = substr($message, 11);
 if ($id == 1799882584 /*|| $id == 1478297206 || $id == 654455829 || $id == 638178378 || $id == 971532801*/ ) { // || uncomment for multiple admins
-  send_message($channel_id, $broadcast, "✅ 𝘼𝙐𝙏𝙊𝙍𝙄𝙕𝘼𝘿𝙊 ✅
+  send_message($channel_id, $broadcast, $message_id, $chat_id "✅ 𝘼𝙐𝙏𝙊𝙍𝙄𝙕𝘼𝘿𝙊 ✅
 
 Estás en la lista de los Dioses 🔱");
 }
@@ -190,7 +190,7 @@ $flag = $data['data']['countryInfo']['emoji'];
 🌐𝗖𝗼𝘂𝗻𝘁𝗿𝘆: $country $flag
 📊𝗧𝘆𝗽𝗲: $type
 👤𝗖𝗵𝗲𝗰𝗸𝗲𝗱 𝗕𝘆: @$username
-👑𝗢𝘄𝗻𝗲𝗿 : [$my]($i)");
+👑𝗢𝘄𝗻𝗲𝗿 : $i");
     }
 else {
     send_MDmessage($chat_id,$message_id, "***𝗜𝗻𝘀𝗲𝗿𝘁𝗮 𝘂𝗻 𝗕𝗜𝗡 𝘃𝗮𝗹𝗶𝗱𝗼***");
@@ -199,7 +199,7 @@ else {
 
     //Wheather API
 if(strpos($message, "/clima") === 0){
-        $location = substr($message, 9);
+        $location = substr($message, 7);
         $weatherToken = "89ef8a05b6c964f4cab9e2f97f696c81"; ///get api key from openweathermap.org
 
    $curl = curl_init();
@@ -246,7 +246,7 @@ if ($location = $name) {
 💧𝙃𝙪𝙢𝙚𝙙𝙖𝙙: $humidity
 🌎𝙋𝙖𝙞𝙨: $country $flag
 ✅𝙍𝙚𝙫𝙞𝙨𝙖𝙙𝙤 𝙥𝙤𝙧: @$username
-👑𝗢𝘄𝗻𝗲𝗿 [$my]($i)");
+👑𝗢𝘄𝗻𝗲𝗿: $i");
 }
 else {
            send_message($chat_id,$message_id, "Invalid City");
