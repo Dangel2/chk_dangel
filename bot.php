@@ -67,7 +67,7 @@ $channel_id = "-100xxxxxxxxxx";
     }
 
     if($message == "/sc" || $message == "/si" || $message == "/st" || $message == "/cs" || $message == "/ua" || $message == "/at"  ){
-   $botdown = "<a href='t.me/DanGel_Glr'>⫷ ɴͥɪͣᴄͫᴀ͜͠☆ ₫₳Ϟ₲϶Γ™⫸</a> esta bajo Mantenimiento";
+   $botdown = "Poseidón esta bajo Mantenimiento";
         send_message($chat_id,$message_id, $botdown);
     }
 
