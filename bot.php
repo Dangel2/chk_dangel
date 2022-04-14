@@ -13,7 +13,6 @@
     $firstname = $update["message"]["from"]["first_name"];
     $chatname = $_ENV['CHAT'];
     $i = ("@DanGel_Glr");
-    $my = "[⫷ ɴͥɪͣᴄͫᴀ͜͠☆ ₫₳Ϟ₲϶Γ™⫸](https://t.me/DanGel_Glr)";
  /// for broadcasting in Channel
 $channel_id = "-100xxxxxxxxxx";
 
@@ -80,7 +79,7 @@ if($message == "/random"){
       $toss =array("1","2","3","4","5","6","7","8","9","10");
     $random_toss=array_rand($toss,4);
     $tossed = $toss[$random_toss[0]];
-        send_message($chat_id,$message_id, "$tossed \nTossed By: @$username\n\nOwner: $i\n Prueba: $my);
+        send_message($chat_id,$message_id, "$tossed \nTossed By: @$username\n\nOwner: $i);
     }
 
      if($message == "/info"){
