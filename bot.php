@@ -12,7 +12,6 @@
     $username = $update["message"]["from"]["username"];
     $firstname = $update["message"]["from"]["first_name"];
     $chatname = $_ENV['CHAT'];
-    $i = ("@DanGel_Glr");
  /// for broadcasting in Channel
 $channel_id = "-100xxxxxxxxxx";
 
@@ -79,11 +78,11 @@ if($message == "/random"){
       $toss =array("1","2","3","4","5","6","7","8","9","10");
     $random_toss=array_rand($toss,4);
     $tossed = $toss[$random_toss[0]];
-        send_message($chat_id,$message_id, "$tossed \nTossed By: @$username\n\nOwner: $i);
+        send_message($chat_id,$message_id, "$tossed \nTossed By: @$username\n\nOwner: @DanGel_Glr);
     }
 
      if($message == "/info"){
-        send_message($chat_id,$message_id, "𝙄𝙉𝙁𝙊𝙍𝙈𝘼𝘾𝙄𝙊𝙉 𝘿𝙀𝙇 𝙐𝙎𝙐𝘼𝙍𝙄𝙊 \n\nName: $firstname\nID: ```$id``` \nUsername: @$username\n\nOwner: $i");
+        send_message($chat_id,$message_id, "𝙄𝙉𝙁𝙊𝙍𝙈𝘼𝘾𝙄𝙊𝙉 𝘿𝙀𝙇 𝙐𝙎𝙐𝘼𝙍𝙄𝙊 \n\nName: $firstname\nID: ```$id``` \nUsername: @$username\n\nOwner: @DanGel_Glr");
     }
 
 
@@ -189,7 +188,7 @@ $flag = $data['data']['countryInfo']['emoji'];
 🌐𝗖𝗼𝘂𝗻𝘁𝗿𝘆: $country $flag
 📊𝗧𝘆𝗽𝗲: $type
 👤𝗖𝗵𝗲𝗰𝗸𝗲𝗱 𝗕𝘆: @$username
-👑𝗢𝘄𝗻𝗲𝗿 : $i");
+👑𝗢𝘄𝗻𝗲𝗿 : @DanGel_Glr");
     }
 else {
     send_MDmessage($chat_id,$message_id, "***𝗜𝗻𝘀𝗲𝗿𝘁𝗮 𝘂𝗻 𝗕𝗜𝗡 𝘃𝗮𝗹𝗶𝗱𝗼***");
@@ -245,7 +244,7 @@ if ($location = $name) {
 💧𝙃𝙪𝙢𝙚𝙙𝙖𝙙: $humidity
 🌎𝙋𝙖𝙞𝙨: $country $flag
 ✅𝙍𝙚𝙫𝙞𝙨𝙖𝙙𝙤 𝙥𝙤𝙧: @$username
-👑𝗢𝘄𝗻𝗲𝗿: $i");
+👑𝗢𝘄𝗻𝗲𝗿: @DanGel_Glr");
 }
 else {
            send_message($chat_id,$message_id, "Invalid City");
