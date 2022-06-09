@@ -125,7 +125,7 @@ if ($syt != null) {
 if (strpos($message, "/broadcast") === 0) {
 $broadcast = substr($message, 11);
 if ($id == 1799882584 /*|| $id == 1478297206 || $id == 654455829 || $id == 638178378 || $id == 971532801*/ ) { // || uncomment for multiple admins
-  send_Cmessage($channel_id, $broadcast,"Autorizado");
+  send_Cmessage($channel_id, $broadcast);
 }
 else {
     send_message($chat_id,$message_id, "No estas Autorizado");
