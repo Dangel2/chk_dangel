@@ -1,6 +1,6 @@
 <?php
 
-    date_default_timezone_set("Asia/kolkata");
+    date_default_timezone_set("America/Managua");
     //Data From Webhook
     $content = file_get_contents("php://input");
     $update = json_decode($content, true);
@@ -63,7 +63,7 @@ $channel_id = "-100xxxxxxxxxx";
     }
 
   if($message == "/sc" || $message == "/si" || $message == "/st" || $message == "/cs" || $message == "/ua" || $message == "/at"  ){
-   $botdown = "@WorldCheckerBot is under Maintenance";
+   $botdown = "Poseidon Esta Bajo mantenimiento";
         send_message($chat_id,$message_id, $botdown);
     }
 
@@ -76,13 +76,13 @@ if($message == "/dado"){
 
 if($message == "/rand"){
       $toss =array("1","2","3","4","5","6","7","8","9","10");
-    $random_toss=array_rand($toss,4);
+    $random_toss=array_rand($toss,10);
     $tossed = $toss[$random_toss[0]];
-        send_message($chat_id,$message_id, "El ganador\n ➡️$tossed⬅️ \nRandom By: @$username");
+        send_message($chat_id,$message_id, "El ganador\n **$tossed ** \nRandom By: @$username");
     }
 
      if($message == "/info"){
-        send_message($chat_id,$message_id, "User Info \nName: $firstname\nID:$id \nUsername: @$username");
+        send_message($chat_id,$message_id, "**Informacion de Usuario** \n**Name:** $firstname\n**ID** $id \n**Username:** @$username");
     }
 
 
@@ -103,10 +103,10 @@ $googleSearch = "[ver resultado de busqueda](https://www.google.com/search?q=$se
 
 if (strpos($message, "/repodl") === 0) {
 $gitdlurl = substr($message, 8);
-$gitdlurl1 = "[Click here](https://github.com/$gitdlurl/archive/master.zip)";
+$gitdlurl1 = "[Click Aqui](https://github.com/$gitdlurl/archive/master.zip)";
 if ($gitdlurl != null) {
   send_MDmessage($chat_id,$message_id, "https://github.com/$gitdlurl/archive/main.zip
- \n⬇️In Case of no preview⬇️ \n$gitdlurl1"  );
+ \n⬇️RESULTADO DE BUSQUEDA⬇️ \n$gitdlurl1"  );
 }
 }
 
@@ -114,7 +114,7 @@ if ($gitdlurl != null) {
 if (strpos($message, "/byt") === 0) {
 $syt = substr($message, 5);
 $syt = preg_replace('/\s+/', '+', $syt);
-$yurl = "[Open Youtube](https://www.youtube.com/results?search_query=$syt)";
+$yurl = "[Abrir Youtube](https://www.youtube.com/results?search_query=$syt)";
 if ($syt != null) {
   send_MDmessage($chat_id,$message_id, $yurl);
 }
@@ -172,17 +172,23 @@ $flag = $data['data']['countryInfo']['emoji'];
  $result1 = $data['result'];
 
     if ($result1 == true) {
-    send_MDmessage($chat_id,$message_id, "***✅ Valid BIN
-Bin: $bin
-Brand: $brand
-Level: $level
-Bank: $bank
-Country: $country $flag
-Type:$type
-Checked By @$username ***");
+    send_MDmessage($chat_id,$message_id, "
+  ╔╦═• ✠ • ═ • ✠ •═╦╗
+⚏★𝙱𝙸𝙽 𝙻𝙾𝙾𝙺𝚄𝙿★⚏
+  ╚╩═• ✠ • ═ • ✠ •═╩╝
+
+    ✅𝑩𝑰𝑵 𝑽𝑨𝑳𝑰𝑫𝑶✅
+🔢𝗕𝗶𝗻: ```$bin```
+💳𝗕𝗿𝗮𝗻𝗱: $brand
+🏆𝗟𝗲𝘃𝗲𝗹: $level
+🏦𝗕𝗮𝗻𝗸: $bank
+🌐𝗖𝗼𝘂𝗻𝘁𝗿𝘆: $country $flag
+📊𝗧𝘆𝗽𝗲: $type
+👤𝗖𝗵𝗲𝗰𝗸𝗲𝗱 𝗕𝘆: @$username
+👑𝗢𝘄𝗻𝗲𝗿 : @DanGel_Glr");
     }
 else {
-    send_MDmessage($chat_id,$message_id, "***Enter Valid BIN***");
+    send_MDmessage($chat_id,$message_id, "***Ponga un BIN valido***");
 }
 }
 
@@ -227,17 +233,18 @@ $celcius = $temp - $kelvin;
 $feels = $feels_like - $kelvin;
 
 if ($location = $name) {
-        send_MDmessage($chat_id,$message_id, "***
-Weather at $location: $weather
-Status: $description
-Temp : $celcius °C
-Feels Like : $feels °C
-Humidity: $humidity
-Country: $country 
-Checked By @$username ***");
+        send_MDmessage($chat_id,$message_id, "
+        ⛅️𝘾𝙡𝙞𝙢𝙖 𝙚𝙣:$location: $weather
+🌦𝙀𝙨𝙩𝙖𝙙𝙤: $description
+🌡𝙏𝙚𝙢𝙥𝙚𝙧𝙖𝙩𝙪𝙧𝙖: $celcius °C
+🌡𝙎𝙚 𝙨𝙞𝙚𝙣𝙩𝙚 𝙘𝙤𝙢𝙤:  $feels °C
+💧𝙃𝙪𝙢𝙚𝙙𝙖𝙙: $humidity
+🌎𝙋𝙖𝙞𝙨: $country $flag
+✅𝙍𝙚𝙫𝙞𝙨𝙖𝙙𝙤 𝙥𝙤𝙧: @$username
+👑𝗢𝘄𝗻𝗲𝗿: @DanGel_Glr");
 }
 else {
-           send_message($chat_id,$message_id, "Invalid City");
+           send_message($chat_id,$message_id, "Nombre de pais incorrecto");
 }
     }
 
